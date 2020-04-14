@@ -1,0 +1,10 @@
+ Volume in drive C is Windows
+ Volume Serial Number is D038-EE94
+
+ Directory of C:\Users\Fabian\OneDrive\Desktop\Myproject
+
+04/14/2020  02:11 PM    <DIR>          .
+04/14/2020  02:11 PM    <DIR>          ..
+04/14/2020  02:11 PM                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  923,862,249,472 bytes free
