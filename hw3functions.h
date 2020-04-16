@@ -77,7 +77,8 @@ void add(){
     getRational(&num1, &den1);
     getRational(&num2, &den2);
     AddRational(&anum, &aden, num1, den1, num2, den2);
-    cout << "The result of " << endl;
+    cout << "The result of ";
+    cout << num1 <<"/"<<den1 <<" + " << num2 << "/" <<den2 << " = ";
     DisplayRational(anum, aden);
     char user = '\0';
     cout << "Do you want to do more additions? (Y/N):";
@@ -94,7 +95,8 @@ void subtract(){
     getRational(&num1, &den1);
     getRational(&num2, &den2);
     SubtractRational(&anum, &aden, num1, den1, num2, den2);
-    cout << "The result of " << endl;
+    cout << "The result of " ;
+    cout << num1 <<"/"<<den1 <<" - " << num2 << "/" <<den2 << " = ";
     DisplayRational(anum, aden);
     char user = '\0';
     cout << "Do you want to do more subtractions? (Y/N): ";
