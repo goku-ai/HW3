@@ -13,11 +13,11 @@ void showMenu(){
 }
 void getRational(int* num, int* den){
     char c;
-    while(1){
+    while(true){
         cout << "Please enter a fraction (n/d): ";
         cin >> *num >> c >> *den;
         if(*den ==0){
-        cout<< "Denominator must not be 0";
+        cout<< "Denominator must not be 0" << endl;;
         }
         else {
             break;
@@ -25,17 +25,16 @@ void getRational(int* num, int* den){
         
     }
 }
-void reduce(int* num, int* den)
-{
-int r, gcd;
-r = *num % *den;
-while(r != 0)
-{
-*num = *den;
-*den = r;
-r = *num%*den;
+void reduce(int* num, int* den){
+int r, gcd, a ,b;
+a = *num;
+b = *den;
+while((a %b) > 0){
+r = a % b;
+b =a;
+b = r;
 }
-gcd = *den;
+gcd = b;
 *num /= gcd;
 *den /= gcd;
 
@@ -43,7 +42,6 @@ gcd = *den;
 void AddRational(int* anum, int* aden, int num1, int den1, int num2, int den2){
     *anum = (num1 * den2)+ (num2 * den1);
     *aden = (den1 * den2);
-
     reduce(anum, aden);
 }
 void SubtractRational(int *anum, int * aden, int num1, int den1, int num2, int den2){
@@ -55,16 +53,13 @@ void SubtractRational(int *anum, int * aden, int num1, int den1, int num2, int d
 
 void DisplayRational(int num, int den)
     {
-if (den == 1)
-{
-cout << num << endl;
+if (den == 1){
+    cout << num << endl;
 }
-else if (num == 0)
-{
-cout << num << endl;
+else if (num == 0){
+    cout << num << endl;
 }
-else
-{
+else{
 cout << num << "/" << den << endl;
 }
 }
