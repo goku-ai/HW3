@@ -7,6 +7,7 @@ using namespace std;
 int main(){
     char choice= '\0';
     while(true){
+    system("cls");
      showMenu();
      cin >> choice;
 if( (choice== 'A') || (choice == 'a')){

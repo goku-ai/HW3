@@ -68,9 +68,9 @@ void DisplayRational(int num, int den){
 }
 
 void add(){
-    system("cls");
     int num1, den1, num2, den2, anum, aden;
     while(true){
+    system("cls");
     cout << "Addition of rational numbers" << endl;
         getRational(&num1, &den1);
         getRational(&num2, &den2);
@@ -81,14 +81,15 @@ void add(){
     char user = '\0';
     cout << "Do you want to do more additions? (Y/N):";
     cin >> user; cin.ignore();
-    if (user == 'N' || user == 'n')
+    if (user == 'N' || user == 'n'){
             break;
+    }
     }
 }
 void subtract(){
-    system("cls");
     int num1, den1, num2, den2, anum, aden;
     while(true){
+    system("cls");
     cout << "Subtraction of rational numbers" << endl;
         getRational(&num1, &den1);
         getRational(&num2, &den2);
@@ -103,5 +104,4 @@ void subtract(){
         break;
     }
     }
-
 }
