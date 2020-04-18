@@ -1,15 +1,16 @@
-//Fabian Hernandez
+// Team #5      CSCI/CMPE 1370      Spring2020      Homework #3
+// Fabian Hernandez
 #include <iostream>
 #include <sstream>
 #include <string>
 using namespace std;
 
 void showMenu(){
-    cout << "Rational numbers calculators" << endl;
+    cout << "Rational numbers calculator" << endl;
     cout << "(A)ddition" << endl;
-    cout << "(S)ubtracction" << endl;
+    cout << "(S)ubtraction" << endl;
     cout << "(Q)uit" << endl;
-    cout << "What do you want? " << endl;
+    cout << "Enter your option: " << endl;
 }
 void getRational(int* num, int* den){
     char c;
@@ -42,11 +43,13 @@ void reduce(int* num, int* den){
     *num /= gcd;
     *den /= gcd;
 }
+// Addition: (a/b) + (c/d) = (a*d)+(c*b)/(b*d)
 void AddRational(int* anum, int* aden, int num1, int den1, int num2, int den2){
     *anum = (num1 * den2)+ (num2 * den1);
     *aden = (den1 * den2);
     reduce(anum, aden);
 }
+// Subtraction: (a/b) -(c/d) = (a*d)-(c*b)/(b*d)
 void SubtractRational(int *anum, int * aden, int num1, int den1, int num2, int den2){
     *anum = (num1 * den2) - (num2 * den1);
     *aden = (den1 * den2);

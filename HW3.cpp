@@ -1,5 +1,6 @@
-//Fabian Hernandez
-//HW3
+// Team #5       CSCI/CMPE 1370     Spring2020         Homework # 3
+// Fabian Hernandez
+// This program lets you add or subtract rational nunbers while also reducing them.
 #include <iostream>
 #include <cstdlib>
 #include "hw3functions.h"
