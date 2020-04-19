@@ -26,6 +26,7 @@ void getRational(int* num, int* den){
         
     }
 }
+//Euclid's algorith; Reduces the result of the algorithm
 void reduce(int* num, int* den){
     int r, gcd , a ,b;
     a = *num;
@@ -57,7 +58,7 @@ void SubtractRational(int *anum, int * aden, int num1, int den1, int num2, int d
    
 }
 
-
+//Displays the result of the algorithm
 void DisplayRational(int num, int den){
     if (den == 1){
         cout << num << endl;
@@ -69,7 +70,7 @@ void DisplayRational(int num, int den){
         cout << num << "/" << den << endl;
 }
 }
-
+//Calls functions to get values, add and display reduce answer.
 void add(){
     int num1, den1, num2, den2, anum, aden;
     while(true){
@@ -89,6 +90,7 @@ void add(){
     }
     }
 }
+//calls functions to get values, subtract and display reduce answer
 void subtract(){
     int num1, den1, num2, den2, anum, aden;
     while(true){
